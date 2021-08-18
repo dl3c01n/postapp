@@ -1,10 +1,11 @@
 import axios from 'axios'
 
-export const insertPost = async (title: string, content: string) => {
-    const Post = {
-        title: title,
-        content: content
-    }
+interface Post {
+    title: string
 
-    await axios.post('http://127.0.0.1:5656/post', Post)
+    content: string
+}
+export const insertPost = async (post: Post) => {
+
+    await axios.post('http://127.0.0.1:5656/post', post)
 }
