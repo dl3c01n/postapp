@@ -1,4 +1,4 @@
-import express, { Response, Request } from 'express'
+import express, { Response } from 'express'
 const { Router } = express
 
 export const errorRoute = Router().get('*', (_, res: Response) => {

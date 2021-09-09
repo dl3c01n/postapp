@@ -1,4 +1,4 @@
-import express, { Request, Response, urlencoded } from 'express'
+import express from 'express'
 import { getPostRoute, errorRoute, postPostRoute} from './route'
 const bodyParser = require('body-parser')
 const cors = require('cors')
